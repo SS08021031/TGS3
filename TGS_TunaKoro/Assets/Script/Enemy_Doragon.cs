@@ -26,7 +26,6 @@ public class Enemy_Doragon : MonoBehaviour
     private float shotCounter;  //0になると弾を発射する
 
     public float totalHP; //エネミーのHP
-
     public bool dead ;  //ドラゴンの撃破を判定
     public float deadcount;//ドラゴン爆発までの時間
     public GameObject explosion_ef;
@@ -133,7 +132,6 @@ public class Enemy_Doragon : MonoBehaviour
         {
             totalHP -= 1;
             Debug.Log("Hit");
-
         }
     }
             //

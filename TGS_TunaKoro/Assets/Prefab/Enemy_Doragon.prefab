@@ -120,7 +120,7 @@ MonoBehaviour:
   dead: 0
   deadcount: 0
   explosion_ef: {fileID: 5788561596739586555, guid: 0cd20f3120a16ee428b2845bc52d23dc, type: 3}
-  explosion_doragon: {fileID: 7921550582855166933, guid: e0beefd0cd83db64681d4641cfebd6b2, type: 3}
+  explosion_doragon: {fileID: 7921550582855166933, guid: 35754ba46a34d19488ba18d029ea2321, type: 3}
 --- !u!65 &7225661837627348756
 BoxCollider:
   m_ObjectHideFlags: 0
