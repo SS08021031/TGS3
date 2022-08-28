@@ -17,6 +17,8 @@ public class Resullt_Controller : MonoBehaviour
     public AudioClip kettei;
     AudioSource audioSource;
 
+    public GameObject Fead_Canvas_Anten;
+
     private bool ActOk;
     void Start()
     {
@@ -26,6 +28,8 @@ public class Resullt_Controller : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
         ActOk = true;
+
+        Fead_Canvas_Anten.SetActive(false);
     }
 
 
@@ -115,6 +119,8 @@ public class Resullt_Controller : MonoBehaviour
 
             Debug.Log("next");
 
+            Fead_Canvas_Anten.SetActive(true );
+
             Invoke("nextscene", 3);
         }
     }
@@ -132,6 +138,8 @@ public class Resullt_Controller : MonoBehaviour
             audioSource.Play();
 
             Debug.Log("exit");
+
+            Fead_Canvas_Anten.SetActive(true);
 
             Invoke("exitscene", 3);
         }

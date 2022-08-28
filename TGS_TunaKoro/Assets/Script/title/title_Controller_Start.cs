@@ -12,7 +12,7 @@ public class title_Controller_Start : MonoBehaviour
 
     BoxCollider boxCollider;
 
-    bool next;
+    public GameObject Fead_Anten_Canvas;
     void Start()
     {
         StartOn.SetActive(false);
@@ -21,6 +21,8 @@ public class title_Controller_Start : MonoBehaviour
         Audio_Manager.instance.PlayTitleMusic();
 
         boxCollider = GetComponent<BoxCollider>();
+
+        Fead_Anten_Canvas.SetActive(false);
     }
 
 
@@ -39,7 +41,9 @@ public class title_Controller_Start : MonoBehaviour
             audioSource.Play();
 
             StartOn.SetActive(true);
-            nextscene();
+
+            Fead_Anten_Canvas.SetActive(true);
+            Invoke("nextscene", 3);
         }
     }
 

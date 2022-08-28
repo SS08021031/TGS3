@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 1dd9d18be3c12464b913233725caa90c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Fade_test.unity
     guid: f8ad642e1acfdb64e801841331e438f4
   - enabled: 1
