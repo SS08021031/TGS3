@@ -11,6 +11,7 @@ public class title_Controller_End : MonoBehaviour
 
     BoxCollider boxCollider;
 
+    public GameObject Fead_Meiten_Canvas;
     void Start()
     {
         EndOn.SetActive(false);
@@ -19,6 +20,8 @@ public class title_Controller_End : MonoBehaviour
         Audio_Manager.instance.PlayTitleMusic();
 
         boxCollider = GetComponent<BoxCollider>();
+
+        Fead_Meiten_Canvas.SetActive(false);
     }
 
     void OnTriggerEnter(Collider collision)
@@ -31,7 +34,9 @@ public class title_Controller_End : MonoBehaviour
             audioSource.Play();
 
             EndOn.SetActive(true);
-            exitscene();
+            Fead_Meiten_Canvas.SetActive(true);
+
+            Invoke("exitscene", 1);
         }
     }
 
