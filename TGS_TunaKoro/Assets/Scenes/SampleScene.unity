@@ -2574,6 +2574,7 @@ GameObject:
   - component: {fileID: 567638887}
   - component: {fileID: 567638889}
   - component: {fileID: 567638886}
+  - component: {fileID: 567638888}
   m_Layer: 0
   m_Name: Whole
   m_TagString: Untagged
@@ -2640,7 +2641,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &567638889
+--- !u!114 &567638888
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2648,6 +2649,23 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567638885}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c75f24bef817a2949abd3e3bb98b6ec7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularSpeed: 15
+  inputX: 0
+  inputY: 0
+  Player: {fileID: 906490552}
+  Crystal: {fileID: 919132149362413117}
+--- !u!114 &567638889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567638885}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffb55e92e919a2449a2939fcaaf31f0b, type: 3}
   m_Name: 
@@ -10097,9 +10115,6 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
-  - component: {fileID: 963194232}
-  - component: {fileID: 963194231}
-  - component: {fileID: 963194230}
   - component: {fileID: 963194233}
   m_Layer: 0
   m_Name: Main Camera
@@ -10207,56 +10222,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &963194230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 082758055ce77e3469d68dd948bd458f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 906490552}
-  Crystal: {fileID: 2061156327}
-  cameraUp: 5
-  cameraDistance: 20
-  y: 3
---- !u!114 &963194231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edceb403abddab24883ce7aba651184e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 79908053}
-  Crystal: {fileID: 1446303222}
-  cameraUp: 5
-  cameraDistance: 15
-  y: 3
-  minPos: {fileID: 543450653365834887}
-  maxPos: {fileID: 0}
---- !u!114 &963194232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bd66dc482a3c1d4db118f63d58ba30a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player1: {fileID: 919132149362413117}
-  Player2: {fileID: 79908053}
 --- !u!114 &963194233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10264,11 +10229,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d83720271a90f2e4e97fd94e963980a9, type: 3}
+  m_Script: {fileID: 11500000, guid: e87c69d4a61ccdd4ba9daeb01cf17099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 906490552}
+  Crystal: {fileID: 2061156327}
+  cameraDistance: {x: 20, y: 2}
+  cameraRotate: 30
+  cameraAngleSpeed: 60
+  MaxDistance: {x: 50, y: 20}
+  MinDistance: {x: 0, y: 2}
+  cameraMoveSpeed: {x: 20, y: 8}
 --- !u!1 &963389237
 GameObject:
   m_ObjectHideFlags: 0
