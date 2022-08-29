@@ -9,6 +9,8 @@ public class TeamLogo_Controller : MonoBehaviour
 
     void Start()
     {
+        Audio_Manager.instance.StopMusic();
+
         audioSource = GetComponent<AudioSource>();
 
         Invoke("Sound", 1f);

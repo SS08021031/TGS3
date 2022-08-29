@@ -9675,6 +9675,7 @@ GameObject:
   - component: {fileID: 963194232}
   - component: {fileID: 963194231}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194233}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9831,6 +9832,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player1: {fileID: 919132149362413117}
   Player2: {fileID: 79908053}
+--- !u!114 &963194233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83720271a90f2e4e97fd94e963980a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 906490555}
+  smoothing: 15
+  angularSpeed: 1
+  inputX: 0
+  speedX: 50
+  speedY: 50
+  Player: {fileID: 906490552}
+  Crystal: {fileID: 2061156327}
+  cameraUp: 5
+  cameraDistance: 30
+  y: 3
 --- !u!1 &963389237
 GameObject:
   m_ObjectHideFlags: 0
@@ -18565,7 +18589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914fd85a22b00a34a88d477e6a2297db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceSpeed: 2
+  bounceSpeed: 4
   bounceVectorMultiple: 2
 --- !u!33 &6833690488030246795
 MeshFilter:
