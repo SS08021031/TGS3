@@ -10,9 +10,9 @@ public class Free_destroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time = 1.0f * Time.deltaTime;
+        time_end -= Time.deltaTime;
 
-        if (time >= time_end)
+        if (time_end <= 0)
         {
             Destroy(this.gameObject);
         }

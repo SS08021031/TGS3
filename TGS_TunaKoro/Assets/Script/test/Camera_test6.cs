@@ -97,5 +97,10 @@ public class Camera_test6 : MonoBehaviour
 		{
             inputY = 0;
         }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }

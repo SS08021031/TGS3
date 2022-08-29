@@ -12,6 +12,8 @@ public class Player_Controller : MonoBehaviour
 
     public GameObject targetObject;
 
+    public LayerMask whatGround;
+
     void Start()
     {
         targetObject = GameObject.Find("Crystal_Point");
@@ -20,6 +22,17 @@ public class Player_Controller : MonoBehaviour
     void Update()
     {
         this.transform.LookAt(targetObject.transform);
+        Vector3 location = Vector3.zero;
+        Vector3 origin = transform.position;
+        Vector3 direction = new Vector3(0, -3, 0);
+        Ray ray = new Ray(origin, direction);
+        Debug.DrawRay(ray.origin, ray.direction * 1f, Color.red);
+
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, whatGround))
+        {
+            transform.position = new Vector3(transform.position.x, hit.point.y + 0.1f, transform.position.z);
+        }
     }
 
     void OnTriggerEnter(Collider other)

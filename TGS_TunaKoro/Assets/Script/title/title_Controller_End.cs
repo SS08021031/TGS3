@@ -40,4 +40,11 @@ public class title_Controller_End : MonoBehaviour
         Application.Quit();
         Debug.Log("Exit");
     }
+    void Update()
+    {
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 }

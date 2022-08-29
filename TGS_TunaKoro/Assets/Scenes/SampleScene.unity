@@ -625,6 +625,9 @@ MonoBehaviour:
   enemys: []
   impact: {fileID: 1551860995512133477, guid: ee29244a781ceb244aed14fcdcbe3a79, type: 3}
   targetObject: {fileID: 0}
+  whatGround:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &80562043
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,7 +710,7 @@ MonoBehaviour:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    timeBetweenSpawn: 0
+    timeBetweenSpawn: 3.5
     timeNextWave: 0
     shouldDisplayWave: 0
   waitFirstSpawn: 10
@@ -716,7 +719,7 @@ MonoBehaviour:
   ThePath: {fileID: 0}
   isSpawn: 1
   waveDisplayTime: 0
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 567638885}
 --- !u!1 &87085260
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,7 +920,7 @@ MonoBehaviour:
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
-    timeBetweenSpawn: 0
+    timeBetweenSpawn: 3.5
     timeNextWave: 0
     shouldDisplayWave: 0
   waitFirstSpawn: 5.5
@@ -926,7 +929,7 @@ MonoBehaviour:
   ThePath: {fileID: 0}
   isSpawn: 1
   waveDisplayTime: 0
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 567638885}
 --- !u!4 &110172326 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
@@ -1460,7 +1463,6 @@ GameObject:
   m_Component:
   - component: {fileID: 306942016}
   - component: {fileID: 306942015}
-  - component: {fileID: 306942014}
   - component: {fileID: 306942013}
   m_Layer: 0
   m_Name: Camera
@@ -1502,14 +1504,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &306942014
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306942012}
-  m_Enabled: 1
 --- !u!20 &306942015
 Camera:
   m_ObjectHideFlags: 0
@@ -1732,7 +1726,7 @@ MonoBehaviour:
     - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
-    timeBetweenSpawn: 0
+    timeBetweenSpawn: 3.5
     timeNextWave: 0
     shouldDisplayWave: 0
   waitFirstSpawn: 8.5
@@ -1741,7 +1735,7 @@ MonoBehaviour:
   ThePath: {fileID: 0}
   isSpawn: 1
   waveDisplayTime: 0
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 567638885}
 --- !u!1 &368194421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,8 +2048,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d93d5dd790a6724b830ecb1694aa435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: {fileID: 0}
-  point: {fileID: 0}
 --- !u!65 &385046671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2553,7 +2545,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567638885}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35c4b48f594ca28458c8a9d26e26633b, type: 3}
   m_Name: 
@@ -2612,7 +2604,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567638885}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffb55e92e919a2449a2939fcaaf31f0b, type: 3}
   m_Name: 
@@ -8703,7 +8695,7 @@ MonoBehaviour:
     - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
     - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    timeBetweenSpawn: 0
+    timeBetweenSpawn: 3.5
     timeNextWave: 0
     shouldDisplayWave: 0
   waitFirstSpawn: 7
@@ -8712,7 +8704,7 @@ MonoBehaviour:
   ThePath: {fileID: 0}
   isSpawn: 1
   waveDisplayTime: 0
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 567638885}
 --- !u!1 &783538418
 GameObject:
   m_ObjectHideFlags: 0
@@ -8937,7 +8929,7 @@ MonoBehaviour:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
-    timeBetweenSpawn: 0
+    timeBetweenSpawn: 3.5
     timeNextWave: 0
     shouldDisplayWave: 0
   waitFirstSpawn: 2.5
@@ -8946,7 +8938,7 @@ MonoBehaviour:
   ThePath: {fileID: 0}
   isSpawn: 1
   waveDisplayTime: 0
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 567638885}
 --- !u!1 &850308310
 GameObject:
   m_ObjectHideFlags: 0
@@ -9325,6 +9317,9 @@ MonoBehaviour:
   enemys: []
   impact: {fileID: 1551860995512133477, guid: ee29244a781ceb244aed14fcdcbe3a79, type: 3}
   targetObject: {fileID: 2061156327}
+  whatGround:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &906490557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9332,7 +9327,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906490552}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54c88616b8cedf64c9abff5e1d8daeba, type: 3}
   m_Name: 
@@ -9453,7 +9448,7 @@ MonoBehaviour:
     - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    timeBetweenSpawn: 0
+    timeBetweenSpawn: 4.5
     timeNextWave: 0
     shouldDisplayWave: 0
   waitFirstSpawn: 4
@@ -9462,7 +9457,7 @@ MonoBehaviour:
   ThePath: {fileID: 0}
   isSpawn: 1
   waveDisplayTime: 0
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 567638885}
 --- !u!1001 &923300396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9996,7 +9991,7 @@ MonoBehaviour:
   - enemySpawnOrder:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    timeBetweenSpawn: 10
+    timeBetweenSpawn: 9.5
     timeNextWave: 0
     shouldDisplayWave: 0
   waitFirstSpawn: 14
@@ -10005,7 +10000,7 @@ MonoBehaviour:
   ThePath: {fileID: 0}
   isSpawn: 1
   waveDisplayTime: 0
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 567638885}
 --- !u!114 &986463441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15236,7 +15231,7 @@ MonoBehaviour:
   - enemySpawnOrder:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    timeBetweenSpawn: 10
+    timeBetweenSpawn: 9.5
     timeNextWave: 0
     shouldDisplayWave: 0
   waitFirstSpawn: 14
@@ -15245,7 +15240,7 @@ MonoBehaviour:
   ThePath: {fileID: 0}
   isSpawn: 1
   waveDisplayTime: 0
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 567638885}
 --- !u!114 &1266448180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15435,7 +15430,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340901741}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b980701f7469e984a8564c1619d026e5, type: 3}
   m_Name: 
@@ -15445,8 +15440,8 @@ MonoBehaviour:
   angularSpeed: 1
   inputX: 0
   inputY: 0
-  speedX: 50
-  speedY: 50
+  speedX: 80
+  speedY: 80
 --- !u!4 &1340901743
 Transform:
   m_ObjectHideFlags: 0
@@ -15469,7 +15464,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340901741}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc8cfc09bbb188a409f32a08036f03bf, type: 3}
   m_Name: 
@@ -15557,7 +15552,7 @@ MonoBehaviour:
   - enemySpawnOrder:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    timeBetweenSpawn: 10
+    timeBetweenSpawn: 9.5
     timeNextWave: 0
     shouldDisplayWave: 0
   waitFirstSpawn: 14
@@ -15566,7 +15561,7 @@ MonoBehaviour:
   ThePath: {fileID: 0}
   isSpawn: 1
   waveDisplayTime: 0
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 567638885}
 --- !u!114 &1415216831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15675,7 +15670,7 @@ MonoBehaviour:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
-    timeBetweenSpawn: 0
+    timeBetweenSpawn: 3.5
     timeNextWave: 0
     shouldDisplayWave: 0
   waitFirstSpawn: 8.5
@@ -15684,7 +15679,7 @@ MonoBehaviour:
   ThePath: {fileID: 0}
   isSpawn: 1
   waveDisplayTime: 0
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 567638885}
 --- !u!65 &1419539423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16499,7 +16494,7 @@ MonoBehaviour:
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    timeBetweenSpawn: 0
+    timeBetweenSpawn: 3
     timeNextWave: 0
     shouldDisplayWave: 0
   waitFirstSpawn: 11.5
@@ -16508,7 +16503,7 @@ MonoBehaviour:
   ThePath: {fileID: 0}
   isSpawn: 1
   waveDisplayTime: 0
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 567638885}
 --- !u!1001 &1717026750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17888,7 +17883,7 @@ MonoBehaviour:
   - enemySpawnOrder:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    timeBetweenSpawn: 10
+    timeBetweenSpawn: 9.5
     timeNextWave: 0
     shouldDisplayWave: 0
   waitFirstSpawn: 14
@@ -17897,7 +17892,7 @@ MonoBehaviour:
   ThePath: {fileID: 0}
   isSpawn: 1
   waveDisplayTime: 0
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 567638885}
 --- !u!114 &2077750378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18570,7 +18565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914fd85a22b00a34a88d477e6a2297db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceSpeed: 5
+  bounceSpeed: 2
   bounceVectorMultiple: 2
 --- !u!33 &6833690488030246795
 MeshFilter:

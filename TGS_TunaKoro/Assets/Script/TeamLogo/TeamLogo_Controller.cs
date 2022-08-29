@@ -17,6 +17,11 @@ public class TeamLogo_Controller : MonoBehaviour
     void Update()
     {
             Invoke("Next", 6.5f);
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     void Sound()

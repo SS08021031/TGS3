@@ -9,6 +9,7 @@ public class Ray_test01 : MonoBehaviour
     public LayerMask whatGround;
     void Update()
     {
+
         Vector3 location = Vector3.zero;
         Vector3 origin = (Gray.transform.position);
         Vector3 direction = new Vector3(0, -1, 0);
@@ -22,7 +23,7 @@ public class Ray_test01 : MonoBehaviour
             
             Debug.Log(hit.point);
             
-            location = hit.point;
+            
             
         }
         

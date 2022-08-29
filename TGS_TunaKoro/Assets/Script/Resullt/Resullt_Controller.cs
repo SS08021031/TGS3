@@ -102,6 +102,11 @@ public class Resullt_Controller : MonoBehaviour
 
                 ExitBotton();
             }
+
+        }
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
 
