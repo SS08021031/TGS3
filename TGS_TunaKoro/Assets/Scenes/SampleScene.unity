@@ -706,7 +706,7 @@ MonoBehaviour:
   - enemySpawnOrder:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
-    - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
+    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
@@ -919,7 +919,7 @@ MonoBehaviour:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
+    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
     timeBetweenSpawn: 3.5
     timeNextWave: 0
     shouldDisplayWave: 0
@@ -1723,9 +1723,9 @@ MonoBehaviour:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
-    - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
+    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
+    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
     timeBetweenSpawn: 3.5
     timeNextWave: 0
     shouldDisplayWave: 0
@@ -8692,8 +8692,8 @@ MonoBehaviour:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
-    - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
-    - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
+    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
+    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     timeBetweenSpawn: 3.5
     timeNextWave: 0
@@ -8925,7 +8925,7 @@ MonoBehaviour:
   - enemySpawnOrder:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
-    - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
+    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
@@ -9443,9 +9443,9 @@ MonoBehaviour:
   waveSpawn:
   - enemySpawnOrder:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
+    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
+    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     timeBetweenSpawn: 4.5
@@ -15664,12 +15664,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveSpawn:
   - enemySpawnOrder:
-    - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
+    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
-    - {fileID: 8754706088496099022, guid: 9bceb3b3153630f45b12458ae5d64c6c, type: 3}
+    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
     timeBetweenSpawn: 3.5
     timeNextWave: 0
     shouldDisplayWave: 0
@@ -15752,8 +15752,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 12.262798, z: 1}
+  m_Center: {x: 0, y: 1.870287, z: 0}
 --- !u!23 &1437947729
 MeshRenderer:
   m_ObjectHideFlags: 0

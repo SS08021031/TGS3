@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 6e32abf4fa1e70149985b8a168d930e3, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -5771,6 +5771,9 @@ MonoBehaviour:
   enemys: []
   impact: {fileID: 1551860995512133477, guid: ee29244a781ceb244aed14fcdcbe3a79, type: 3}
   targetObject: {fileID: 0}
+  whatGround:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!4 &287776269
 Transform:
   m_ObjectHideFlags: 0
@@ -6597,6 +6600,9 @@ MonoBehaviour:
   enemys: []
   impact: {fileID: 1551860995512133477, guid: ee29244a781ceb244aed14fcdcbe3a79, type: 3}
   targetObject: {fileID: 0}
+  whatGround:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!54 &749214071
 Rigidbody:
   m_ObjectHideFlags: 0
