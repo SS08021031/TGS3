@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -6,10 +8,9 @@ public class CountDown : MonoBehaviour
 {
     public float time;
     public Text TimerText;
-    public GameObject Fade_Anten_Canvas;
     void Start()
     {
-        Fade_Anten_Canvas.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -22,16 +23,8 @@ public class CountDown : MonoBehaviour
         }
         else if (time < 0)
         {
-            Fade_Anten_Canvas.SetActive(true);
-
-            Invoke("nextscene", 3);
-            
+            SceneManager.LoadScene("Resullt");
         }
-    }
-
-    void nextscene()
-    {
-        SceneManager.LoadScene("Resullt");
     }
     
 }

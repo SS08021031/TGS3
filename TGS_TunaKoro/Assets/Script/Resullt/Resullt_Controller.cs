@@ -151,7 +151,7 @@ public class Resullt_Controller : MonoBehaviour
     }
     void nextscene()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("TeamLogo");
     }
 
     void exitscene()
