@@ -26,9 +26,6 @@ public class score_test : MonoBehaviour
     {
         TextFrame.text = string.Format("{0}", score);
 
-        if (Input.GetKeyDown("joystick button 1"))
-        {
-            SceneManager.LoadScene("SampleScene");
-        }
+        
     }
 }
