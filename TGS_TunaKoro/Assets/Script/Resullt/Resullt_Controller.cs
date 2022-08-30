@@ -79,7 +79,7 @@ public class Resullt_Controller : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("joystick button 0"))
+        if (Input.GetKeyDown("joystick button 0") || Input.GetKeyDown("space"))
         {
             if (selCnt == 1)
             {
@@ -114,7 +114,7 @@ public class Resullt_Controller : MonoBehaviour
     {
         Debug.Log("ネクストボタン");
 
-        if (Input.GetKeyDown("joystick button 0"))
+        if (Input.GetKeyDown("joystick button 0") || Input.GetKeyDown("space"))
         {
             Debug.Log("ボタン");
 
@@ -134,7 +134,7 @@ public class Resullt_Controller : MonoBehaviour
     {
         Debug.Log("出口ボタン");
 
-        if (Input.GetKeyDown("joystick button 0"))
+        if (Input.GetKeyDown("joystick button 0") || Input.GetKeyDown("space"))
         {
             Debug.Log("ボタン");
 
