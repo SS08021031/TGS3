@@ -10259,7 +10259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 906490552}
   Crystal: {fileID: 2061156327}
-  cameraDistance: {x: 20, y: 2}
+  cameraDistance: {x: 20, y: 5}
   cameraRotate: 30
   cameraAngleSpeed: 60
   MaxDistance: {x: 50, y: 20}
