@@ -706,7 +706,7 @@ MonoBehaviour:
   - enemySpawnOrder:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
-    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
+    - {fileID: 8754706088496099022, guid: e173eab990290d44697778d54db21dc2, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
@@ -919,7 +919,7 @@ MonoBehaviour:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
+    - {fileID: 8754706088496099022, guid: e173eab990290d44697778d54db21dc2, type: 3}
     timeBetweenSpawn: 3.5
     timeNextWave: 0
     shouldDisplayWave: 0
@@ -1766,9 +1766,9 @@ MonoBehaviour:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
-    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
+    - {fileID: 8754706088496099022, guid: e173eab990290d44697778d54db21dc2, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
+    - {fileID: 8754706088496099022, guid: e173eab990290d44697778d54db21dc2, type: 3}
     timeBetweenSpawn: 3.5
     timeNextWave: 0
     shouldDisplayWave: 0
@@ -2088,9 +2088,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 385046668}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d93d5dd790a6724b830ecb1694aa435, type: 3}
+  m_Script: {fileID: 11500000, guid: 95ace65dbdc67f440b6f0f01a814e935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Damage: {fileID: 9089587544156977423, guid: 39d11cb0afc11ce459a43e43cc0ac4bb, type: 3}
+  point: {fileID: 5356560935877214465, guid: 1d0efca8cf963e9479ee6c5a51aed5e4, type: 3}
 --- !u!65 &385046671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3702,7 +3704,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 50
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -3968,7 +3970,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 2
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4398,7 +4400,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 0
+    enabled: 1
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -4407,7 +4409,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 0.019607844}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -8948,8 +8950,8 @@ MonoBehaviour:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
-    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
-    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
+    - {fileID: 8754706088496099022, guid: e173eab990290d44697778d54db21dc2, type: 3}
+    - {fileID: 8754706088496099022, guid: e173eab990290d44697778d54db21dc2, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     timeBetweenSpawn: 3.5
     timeNextWave: 0
@@ -9276,7 +9278,7 @@ MonoBehaviour:
   - enemySpawnOrder:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
-    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
+    - {fileID: 7930087449227094197, guid: 685787dbaf252844ba56bb360e46497f, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
@@ -9795,9 +9797,9 @@ MonoBehaviour:
   waveSpawn:
   - enemySpawnOrder:
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
+    - {fileID: 8754706088496099022, guid: e173eab990290d44697778d54db21dc2, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
-    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
+    - {fileID: 8754706088496099022, guid: e173eab990290d44697778d54db21dc2, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     timeBetweenSpawn: 4.5
@@ -11425,7 +11427,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 50
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -11691,7 +11693,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 2
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -12121,7 +12123,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 0
+    enabled: 1
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -12130,7 +12132,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 0.019607844}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -16175,12 +16177,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveSpawn:
   - enemySpawnOrder:
-    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
+    - {fileID: 8754706088496099022, guid: e173eab990290d44697778d54db21dc2, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
     - {fileID: 4739263671886437707, guid: 29315bad4ae06f0498065a819a81d843, type: 3}
     - {fileID: 2817605827888385423, guid: 528a9ac0329ce964c8125fe199d82ba9, type: 3}
-    - {fileID: 8754706088496099022, guid: d0e257a7a3195f148b80b286b5e5e803, type: 3}
+    - {fileID: 8754706088496099022, guid: e173eab990290d44697778d54db21dc2, type: 3}
     timeBetweenSpawn: 3.5
     timeNextWave: 0
     shouldDisplayWave: 0
