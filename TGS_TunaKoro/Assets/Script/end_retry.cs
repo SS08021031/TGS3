@@ -14,7 +14,7 @@ public class end_retry : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.F1))
+        if(Input.GetKey(KeyCode.Escape))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
