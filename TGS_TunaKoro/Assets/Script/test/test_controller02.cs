@@ -17,6 +17,10 @@ public class test_controller02 : MonoBehaviour
     /// (中央)クリスタルオブジェクト
     /// </summary>
     [SerializeField] GameObject Crystal;
+    /// <summary>
+    /// 傾けられる角度限界
+    /// </summary>
+    [SerializeField] float MaxAngle;
 
     void Start()
     {
@@ -39,5 +43,30 @@ public class test_controller02 : MonoBehaviour
         angle += Quaternion.AngleAxis(angularSpeed * inputY * Time.deltaTime, tcv).eulerAngles;
         // angleで設定した分回転させる
         transform.Rotate(angle);
+
+        //if(transform.rotation.eulerAngles.x >= MaxAngle)
+        //{
+        //    transform.rotation = Quaternion.Euler(MaxAngle, transform.rotation.y, transform.rotation.z);
+        //}
+        //else if (transform.rotation.eulerAngles.x <= -MaxAngle)
+        //{
+        //    transform.rotation = Quaternion.Euler(-MaxAngle, transform.rotation.y, transform.rotation.z);
+        //}
+        //if (transform.rotation.eulerAngles.y >= MaxAngle)
+        //{
+        //    transform.rotation = Quaternion.Euler(transform.rotation.x, MaxAngle, transform.rotation.z);
+        //}
+        //else if (transform.rotation.eulerAngles.y <= -MaxAngle)
+        //{
+        //    transform.rotation = Quaternion.Euler(transform.rotation.x, -MaxAngle, transform.rotation.z);
+        //}
+        //if (transform.rotation.eulerAngles.z >= MaxAngle)
+        //{
+        //    transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, MaxAngle);
+        //}
+        //else if (transform.rotation.eulerAngles.z <= -MaxAngle)
+        //{
+        //    transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, -MaxAngle);
+        //}
     }
 }
