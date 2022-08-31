@@ -15,18 +15,22 @@ public class CountDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(0 < time)
+        if(Ingame_controll.ingamecontroll == true)
         {
-            time -= Time.deltaTime;
-            TimerText.text = time.ToString("F0");
-        }
-        else if (time < 0)
-        {
-            Fade_Anten_Canvas.SetActive(true);
+            if (0 < time)
+            {
+                time -= Time.deltaTime;
+                TimerText.text = time.ToString("F0");
+            }
+            else if (time < 0)
+            {
+                Fade_Anten_Canvas.SetActive(true);
 
-            Invoke("nextscene", 3);
-            
+                Invoke("nextscene", 3);
+
+            }
         }
+        
     }
 
     void nextscene()
