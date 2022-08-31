@@ -44,6 +44,34 @@ public class test_controller02 : MonoBehaviour
         // angle‚ÅÝ’è‚µ‚½•ª‰ñ“]‚³‚¹‚é
         transform.Rotate(angle);
 
+
+        // ‰ñ“]Šp“x‚É§ŒÀ‚ðŠ|‚¯‚é---------------------------------------------------------- -
+
+        // Œ»Ý‚Ì‰ñ“]‚ðŽæ“¾
+        Vector3 adjustment = transform.eulerAngles;
+
+        // 0`360‹‚ð-180`180‹‚É’²®
+        if (adjustment.x > 180) adjustment.x -= 360;
+        if (adjustment.y > 180) adjustment.y -= 360;
+        if (adjustment.z > 180) adjustment.z -= 360;
+
+        // x,y,z‚»‚ê‚¼‚ê‚ÌŠp“x‚ðMaxAngleˆÈ‰ºA-MaxAngleˆÈã‚É’²®
+        if (adjustment.x > MaxAngle) adjustment.x = MaxAngle;
+        else if (adjustment.x < -MaxAngle) adjustment.x = -MaxAngle;
+        if (adjustment.y > MaxAngle) adjustment.y = MaxAngle;
+        else if (adjustment.y < -MaxAngle) adjustment.y = -MaxAngle;
+        if (adjustment.z > MaxAngle) adjustment.z = MaxAngle;
+        else if (adjustment.z < -MaxAngle) adjustment.z = -MaxAngle;
+
+        // -180`180‹‚ð0`360‹‚É–ß‚·
+        if (adjustment.x < 0) adjustment.x += 360;
+        if (adjustment.y < 0) adjustment.y += 360;
+        if (adjustment.z < 0) adjustment.z += 360;
+
+        // Œ»Ý‚Ì‰ñ“]Šp“x‚ðXV
+        transform.eulerAngles = adjustment;
+        //---------------------------------------------------------------------------------
+
         //if(transform.rotation.eulerAngles.x >= MaxAngle)
         //{
         //  transform.rotation = Quaternion.Euler(MaxAngle, transform.rotation.y, transform.rotation.z);
