@@ -16,7 +16,7 @@ public class Fairy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        crystal = GameObject.Find("crystal");
+        crystal = GameObject.Find("Crystal_Point");
     }
 
     // Update is called once per frame
@@ -28,6 +28,8 @@ public class Fairy : MonoBehaviour
 
         float step = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, crystal.transform.position, step);
+
+        this.transform.LookAt(crystal.transform);
     }
 
     void OnTriggerEnter(Collider other)
