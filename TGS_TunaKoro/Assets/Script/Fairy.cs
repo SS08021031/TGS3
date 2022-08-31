@@ -35,11 +35,18 @@ public class Fairy : MonoBehaviour
 
         if (other.CompareTag("line"))
         {
-
+            //スコアが上がる
+            score_test.instance.score -= 200;
             Destroy(this.gameObject);
 
             //Debug.Log("line");
 
+        }
+        if (other.CompareTag("crystal"))
+        {
+            //スコアが上がる
+            score_test.instance.score += 500;
+            Destroy(this.gameObject);
         }
     }
 }

@@ -46,15 +46,15 @@ public class test_controller02 : MonoBehaviour
 
         //if(transform.rotation.eulerAngles.x >= MaxAngle)
         //{
-        //    transform.rotation = Quaternion.Euler(MaxAngle, transform.rotation.y, transform.rotation.z);
-        //}
+        //  transform.rotation = Quaternion.Euler(MaxAngle, transform.rotation.y, transform.rotation.z);
+        // }
         //else if (transform.rotation.eulerAngles.x <= -MaxAngle)
         //{
         //    transform.rotation = Quaternion.Euler(-MaxAngle, transform.rotation.y, transform.rotation.z);
         //}
         //if (transform.rotation.eulerAngles.y >= MaxAngle)
         //{
-        //    transform.rotation = Quaternion.Euler(transform.rotation.x, MaxAngle, transform.rotation.z);
+        //  transform.rotation = Quaternion.Euler(transform.rotation.x, MaxAngle, transform.rotation.z);
         //}
         //else if (transform.rotation.eulerAngles.y <= -MaxAngle)
         //{
@@ -66,7 +66,7 @@ public class test_controller02 : MonoBehaviour
         //}
         //else if (transform.rotation.eulerAngles.z <= -MaxAngle)
         //{
-        //    transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, -MaxAngle);
+        //   transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, -MaxAngle);
         //}
     }
 }
