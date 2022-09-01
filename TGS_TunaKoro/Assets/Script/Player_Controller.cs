@@ -21,7 +21,7 @@ public class Player_Controller : MonoBehaviour
 
     void Update()
     {
-        if(Ingame_controll.ingamecontroll == true)
+        if(Ingame_controll.instance.ingamecontroll == true)
         {
             this.transform.LookAt(targetObject.transform);
             Vector3 location = Vector3.zero;

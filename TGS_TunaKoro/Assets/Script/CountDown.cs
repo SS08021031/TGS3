@@ -15,7 +15,7 @@ public class CountDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Ingame_controll.ingamecontroll == true)
+        if(Ingame_controll.instance.ingamecontroll == true)
         {
             if (0 < time)
             {

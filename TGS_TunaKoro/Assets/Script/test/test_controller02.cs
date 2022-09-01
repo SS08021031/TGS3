@@ -28,7 +28,7 @@ public class test_controller02 : MonoBehaviour
     }
     void Update()
     {
-        if(Ingame_controll.ingamecontroll == true)
+        if(Ingame_controll.instance.ingamecontroll == true)
         {
             //コントローラー操作
             inputX = Input.GetAxis("Horizontal");

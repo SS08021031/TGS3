@@ -17130,6 +17130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f8d517d6fcc74d95485444f3e1e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingamecontroll: 0
   time: 0
 --- !u!1 &1660772288
 GameObject:

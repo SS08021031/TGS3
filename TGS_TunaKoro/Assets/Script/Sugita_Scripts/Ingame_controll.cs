@@ -2,19 +2,30 @@ using UnityEngine;
 
 public class Ingame_controll : MonoBehaviour
 {
-    public static bool ingamecontroll;
-
+    public static Ingame_controll instance;
+    public bool ingamecontroll;
     public float time;
+    public void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
     void Start()
     {
-        ingamecontroll = false; 
+        ingamecontroll = false;
+        time = 0.0f;
     }
 
     void Update()
     {
-        time = Time.time;
-
-        if (time > 5)
+        if (time < 5.0f)
+        {
+            time += Time.deltaTime;
+            ingamecontroll = false;
+        }
+        else
         {
             ingamecontroll = true;
         }
