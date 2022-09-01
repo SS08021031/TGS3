@@ -10383,7 +10383,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b57ae8c5698a5cd46aa044b72a2b2d2b, type: 3}
   m_Name: 
@@ -10403,7 +10403,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e87c69d4a61ccdd4ba9daeb01cf17099, type: 3}
   m_Name: 
@@ -17006,6 +17006,7 @@ GameObject:
   - component: {fileID: 1646984798}
   - component: {fileID: 1646984797}
   - component: {fileID: 1646984796}
+  - component: {fileID: 1646984801}
   - component: {fileID: 1646984800}
   m_Layer: 5
   m_Name: FirstCountDown_Canvas
@@ -17117,6 +17118,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1646984801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646984795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f8d517d6fcc74d95485444f3e1e6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
 --- !u!1 &1660772288
 GameObject:
   m_ObjectHideFlags: 0
