@@ -102,14 +102,14 @@ public class Golem : MonoBehaviour
         }
 
 
-        if (other.CompareTag("Player"))
-        {
-            Audio_Manager.instance.PlaySE(10);
-            isBind = true;
+        //if (other.CompareTag("Player"))
+        //{
+          //  Audio_Manager.instance.PlaySE(10);
+          //  isBind = true;
 
-            Line.GetComponent<line_bind>().LineActive();
+           // Line.GetComponent<line_bind>().LineActive();
 
-        }
+        //}
     }
     public void Bind_Destroy(GameObject gameObject)
     {
