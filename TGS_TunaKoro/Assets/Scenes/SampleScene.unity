@@ -9962,7 +9962,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906490552}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e42094fb5d98e5e4696505111e1aed97, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 1.4795341
@@ -10022,7 +10022,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   slip: {fileID: 13400000, guid: fbd64f3d80e1b3949ac6ec0e23f52891, type: 2}
-  nonslip: {fileID: 13400000, guid: b509093f9b2a51d4bb4165d48403a438, type: 2}
+  nonslip: {fileID: 13400000, guid: e1e1be253be2d4644ac756b8395599d2, type: 2}
   inputX: 0
   inputY: 0
 --- !u!114 &906490557
