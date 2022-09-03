@@ -20,11 +20,11 @@ public class Ingame_controll : MonoBehaviour
 
     void Update()
     {
-        if (time < 5.0f)
+        if (time <= 5.0f)
         {
             time += Time.deltaTime;
             ingamecontroll = false;
-        }
+        }    
         else
         {
             ingamecontroll = true;

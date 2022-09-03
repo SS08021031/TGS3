@@ -3,7 +3,8 @@ guid: af6bb5b3c5e575542a771499b0e31d65
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _fade_Antetn: {fileID: 2100000, guid: 77e6508bee0f9d043b433aac7ebb0b63, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

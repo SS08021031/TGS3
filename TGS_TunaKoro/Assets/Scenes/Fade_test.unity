@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6bb5b3c5e575542a771499b0e31d65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fade_Antetn: {fileID: 2100000, guid: 024a46b9c64cfae4d906fa921feaec67, type: 2}
+  _fade_Antetn: {fileID: 2100000, guid: 77e6508bee0f9d043b433aac7ebb0b63, type: 2}
   FadeTime: 3
 --- !u!114 &1014154900
 MonoBehaviour:
@@ -761,7 +761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1801705842
 MonoBehaviour:
   m_ObjectHideFlags: 0

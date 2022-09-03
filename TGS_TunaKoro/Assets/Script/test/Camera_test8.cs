@@ -55,66 +55,70 @@ public class Camera_test8 : MonoBehaviour
 
     void Update()
     {
-        // カメラ座標変数（プレイヤー座標を代入）
-        Vector3 cameraPos = Player.transform.position;
-
-        // 右スティック上下操作でカメラの距離を動かす
-        inputY = Input.GetAxis("Horizontal2");
-        // float変数誤差調整用
-        if (inputY < 0.001f && inputY > -0.001f) inputY = 0;
-        if (moveX <= MaxDistance.x && moveX >= MinDistance.x)
+        if (Ingame_controll.instance.ingamecontroll == true)
         {
-            moveX += cameraMoveSpeed.x * -inputY * Time.deltaTime;
-        }
-        else if (moveX > MaxDistance.x) moveX = MaxDistance.x;
-        else if (moveX < MinDistance.x) moveX = MinDistance.x;
+            // カメラ座標変数（プレイヤー座標を代入）
+            Vector3 cameraPos = Player.transform.position;
 
-        if (moveY <= MaxDistance.y && moveY >= MinDistance.y)
-        {
-            moveY += cameraMoveSpeed.y * -inputY * Time.deltaTime;
-        }
-        else if (moveY > MaxDistance.y) moveY = MaxDistance.y;
-        else if (moveY < MinDistance.y) moveY = MinDistance.y;
+            // 右スティック上下操作でカメラの距離を動かす
+            inputY = Input.GetAxis("Horizontal2");
+            // float変数誤差調整用
+            if (inputY < 0.001f && inputY > -0.001f) inputY = 0;
+            if (moveX <= MaxDistance.x && moveX >= MinDistance.x)
+            {
+                moveX += cameraMoveSpeed.x * -inputY * Time.deltaTime;
+            }
+            else if (moveX > MaxDistance.x) moveX = MaxDistance.x;
+            else if (moveX < MinDistance.x) moveX = MinDistance.x;
 
-        if(Input.GetKeyDown(KeyCode.Tab))
-        {
-            moveX = cameraDistance.x;
-            moveY = cameraDistance.y;
-        }
+            if (moveY <= MaxDistance.y && moveY >= MinDistance.y)
+            {
+                moveY += cameraMoveSpeed.y * -inputY * Time.deltaTime;
+            }
+            else if (moveY > MaxDistance.y) moveY = MaxDistance.y;
+            else if (moveY < MinDistance.y) moveY = MinDistance.y;
 
-        // プレイヤー→クリスタルの方向ベクトル
-        Vector3 ToCrystalVector = (Crystal.transform.position - Player.transform.position).normalized;
-        // ↑のベクトルの逆方向にカメラ座標を配置
-        cameraPos -= ToCrystalVector * moveX;
-        // カメラを上にずらす
-        cameraPos += new Vector3(0, moveY, 0);
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                moveX = cameraDistance.x;
+                moveY = cameraDistance.y;
+            }
 
-        // カメラのpositionに座標変数を代入
-        transform.position = cameraPos;
+            // プレイヤー→クリスタルの方向ベクトル
+            Vector3 ToCrystalVector = (Crystal.transform.position - Player.transform.position).normalized;
+            // ↑のベクトルの逆方向にカメラ座標を配置
+            cameraPos -= ToCrystalVector * moveX;
+            // カメラを上にずらす
+            cameraPos += new Vector3(0, moveY, 0);
 
-        // カメラの方向をクリスタルへ向かせる
-        transform.LookAt(Crystal.transform);
+            // カメラのpositionに座標変数を代入
+            transform.position = cameraPos;
 
-        // 右スティック左右操作でカメラを左右へ動かす
-        inputX = Input.GetAxis("Vertical2");
-        // float変数誤差調整用
-        if (inputX < 0.001f && inputX > -0.001f) inputX = 0;
-        if(inputX == 0 && rotate > 1)
-        {
-            rotate -= cameraAngleSpeed * Time.deltaTime;
+            // カメラの方向をクリスタルへ向かせる
+            transform.LookAt(Crystal.transform);
+
+            // 右スティック左右操作でカメラを左右へ動かす
+            inputX = Input.GetAxis("Vertical2");
+            // float変数誤差調整用
+            if (inputX < 0.001f && inputX > -0.001f) inputX = 0;
+            if (inputX == 0 && rotate > 1)
+            {
+                rotate -= cameraAngleSpeed * Time.deltaTime;
+            }
+            else if (inputX == 0 && rotate < -1)
+            {
+                rotate += cameraAngleSpeed * Time.deltaTime;
+            }
+            else if (inputX == 0)
+            {
+                rotate = 0;
+            }
+            else if (rotate < cameraRotate && rotate > -cameraRotate)
+            {
+                rotate += cameraAngleSpeed * -inputX * Time.deltaTime;
+            }
+            transform.Rotate(0, rotate, 0);
         }
-        else if(inputX == 0 && rotate < -1)
-        {
-            rotate += cameraAngleSpeed * Time.deltaTime;
-        }
-        else if(inputX == 0)
-        {
-            rotate = 0;
-        }
-        else if (rotate < cameraRotate && rotate > -cameraRotate)
-        {
-            rotate += cameraAngleSpeed * -inputX * Time.deltaTime;
-        }
-        transform.Rotate(0, rotate, 0);
+            
     }
 }
