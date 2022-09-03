@@ -14,20 +14,9 @@ public class Player_Controller : MonoBehaviour
 
     public LayerMask whatGround;
 
-    private Rigidbody rb;
-    private CapsuleCollider collider;
-    public PhysicMaterial slip;
-    public PhysicMaterial nonslip;
-
-    public float inputX;
-    public float inputY;
-
     void Start()
     {
         targetObject = GameObject.Find("Crystal_Point");
-        rb = GetComponent<Rigidbody>();
-        collider = GetComponent<CapsuleCollider>();
-
     }
 
     void Update()
@@ -47,19 +36,7 @@ public class Player_Controller : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, hit.point.y + 0.1f, transform.position.z);
             }
         }
-        //コントローラー操作
-        inputX = Input.GetAxis("Horizontal");
-        inputY = Input.GetAxis("Vertical");
-
-        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
-        {
-            collider.material = nonslip;
-        }
-        else
-        {
-            collider.material = slip;
-        }
-
+        
     }
 
     void OnTriggerEnter(Collider other)
