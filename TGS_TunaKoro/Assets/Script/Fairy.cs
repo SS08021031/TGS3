@@ -41,6 +41,7 @@ public class Fairy : MonoBehaviour
             //ƒXƒRƒA‚ª‰º‚ª‚é
             score_test.instance.score -= 200;
             var child = Instantiate(dead, transform.position, Quaternion.identity);
+            Audio_Manager.instance.PlaySE(13);
             Destroy(this.gameObject);
 
             //Debug.Log("line");

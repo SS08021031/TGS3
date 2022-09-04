@@ -33,8 +33,11 @@ public class title_Controller_Start : MonoBehaviour
         PVcount -= Time.deltaTime;
         if (PVcount <= 0)
         {
-            SceneManager.LoadScene("3Dmovie");
+            Fead_Anten_Canvas.SetActive(true);
+            Invoke("moviescene", 3);
+            
         }
+
     } 
 
     void OnTriggerEnter(Collider collision)
@@ -56,5 +59,10 @@ public class title_Controller_Start : MonoBehaviour
     void nextscene()
     {
         SceneManager.LoadScene("IngamePV");
+    }
+
+    void moviescene()
+    {
+        SceneManager.LoadScene("3Dmovie");
     }
 }
