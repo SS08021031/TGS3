@@ -4977,6 +4977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crystal: {fileID: 0}
   speed: 3
+  dead: {fileID: 355984777106975217, guid: b802af0f9f016df48a523bec4162ac1f, type: 3}
 --- !u!136 &4914170287414526482
 CapsuleCollider:
   m_ObjectHideFlags: 0

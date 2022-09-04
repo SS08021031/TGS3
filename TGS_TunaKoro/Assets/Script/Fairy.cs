@@ -11,6 +11,7 @@ public class Fairy : MonoBehaviour
     //Vector3の名前
 
     public float speed = 3.0f;
+    public GameObject dead;
 
 
     // Start is called before the first frame update
@@ -37,8 +38,9 @@ public class Fairy : MonoBehaviour
 
         if (other.CompareTag("line"))
         {
-            //スコアが上がる
+            //スコアが下がる
             score_test.instance.score -= 200;
+            var child = Instantiate(dead, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
 
             //Debug.Log("line");

@@ -13818,7 +13818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6bb5b3c5e575542a771499b0e31d65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fade_Antetn: {fileID: 2100000, guid: 024a46b9c64cfae4d906fa921feaec67, type: 2}
+  _fade_Antetn: {fileID: 2100000, guid: 77e6508bee0f9d043b433aac7ebb0b63, type: 2}
   FadeTime: 3
 --- !u!114 &1830363544
 MonoBehaviour:
@@ -14010,6 +14010,7 @@ MonoBehaviour:
   sentaku: {fileID: 8300000, guid: 81dabdae22a8fd1449bfd3dea188922a, type: 3}
   kettei: {fileID: 8300000, guid: 6549386ca9834b84790812d71681ef5a, type: 3}
   Fead_Anten_Canvas: {fileID: 2088579694}
+  PVcount: 60
 --- !u!4 &1874677510
 Transform:
   m_ObjectHideFlags: 0

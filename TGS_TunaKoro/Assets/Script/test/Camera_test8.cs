@@ -55,7 +55,7 @@ public class Camera_test8 : MonoBehaviour
 
     void Update()
     {
-        if (Ingame_controll.instance.ingamecontroll == true)
+        //if (Ingame_controll.instance.ingamecontroll == true)
         {
             // カメラ座標変数（プレイヤー座標を代入）
             Vector3 cameraPos = Player.transform.position;

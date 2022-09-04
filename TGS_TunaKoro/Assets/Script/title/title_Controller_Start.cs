@@ -13,6 +13,8 @@ public class title_Controller_Start : MonoBehaviour
     BoxCollider boxCollider;
 
     public GameObject Fead_Anten_Canvas;
+
+    public float PVcount;
     void Start()
     {
         StartOn.SetActive(false);
@@ -28,7 +30,11 @@ public class title_Controller_Start : MonoBehaviour
 
     void Update()
     {
-
+        PVcount -= Time.deltaTime;
+        if (PVcount <= 0)
+        {
+            SceneManager.LoadScene("3Dmovie");
+        }
     } 
 
     void OnTriggerEnter(Collider collision)
@@ -49,6 +55,6 @@ public class title_Controller_Start : MonoBehaviour
 
     void nextscene()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("IngamePV");
     }
 }
